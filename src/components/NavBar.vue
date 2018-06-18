@@ -65,7 +65,7 @@ export default {
         },
         activities: {
           path: '/activities',
-          icon: 'list',
+          icon: 'color_lens',
           label: 'Activities'
         },
         guests: {

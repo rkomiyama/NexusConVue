@@ -51,7 +51,6 @@
       Duis vitae est sit amet risus bibendum imperdiet. Suspendisse et lorem eget sapien efficitur euismod. 
       Proin vel turpis venenatis, finibus arcu consectetur, mattis urna. Quisque nec molestie sem.
     </p>
-
     <p>
       Nunc mauris sem, rhoncus vitae ultricies in, varius et ante. Vivamus at pellentesque ligula. Nunc 
       faucibus, lectus vitae congue consectetur, lacus ipsum vestibulum orci, sed dictum lacus tellus a 
@@ -59,7 +58,6 @@
       commodo consectetur. Donec sed nibh lacinia, pretium lorem vel, faucibus nulla. Proin sagittis, lectus 
       sit amet varius facilisis, lacus tortor vestibulum felis, laoreet commodo sem augue et odio.
     </p>
-
     <p>
       Pellentesque tortor tortor, tincidunt non nibh vel, consequat interdum nunc. Maecenas consequat lorem 
       non libero commodo accumsan. Suspendisse cursus orci a enim sollicitudin eleifend. Sed ac egestas 
@@ -69,7 +67,6 @@
       libero blandit, sagittis nibh sit amet, pulvinar massa. Ut elementum velit quis libero fringilla, et 
       aliquet erat viverra. Mauris ipsum eros, maximus eu molestie vitae, consectetur congue ex.
     </p>
-
     <p>
       In euismod magna augue. Aliquam ac lacinia magna, eu vestibulum magna. Pellentesque vel pharetra leo. 
       Integer hendrerit urna quis justo fermentum finibus. Nulla faucibus arcu a ex blandit, nec fringilla 
@@ -88,3 +85,13 @@
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style>
+
+</style>
