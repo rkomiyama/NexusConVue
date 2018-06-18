@@ -1,10 +1,14 @@
 <template>
   <div id="app">
-    <v-app id="nexuscon">
+    <v-app id="nexuscon" dark>
       <NavBar />
-      <transition name="slide" mode="out-in">
-        <router-view></router-view>
-      </transition>
+      <v-content>
+        <v-container>
+          <transition name="slide" mode="out-in">
+            <router-view></router-view>
+          </transition>
+        </v-container>
+      </v-content>
       <Footer />
     </v-app>
   </div>
@@ -28,7 +32,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
 }
 .slide-enter,
