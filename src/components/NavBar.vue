@@ -1,6 +1,10 @@
 <template>
   <div>
-    <v-navigation-drawer fixed app v-model="drawer" v-if="$mq === 'mobile'">
+    <v-navigation-drawer
+      fixed
+      app
+      v-model="drawer"
+      v-if="$mq === 'mobile'">
       <v-list>
         <v-list-tile
           v-for="(link, i) in links"
@@ -26,7 +30,9 @@
             :key="i"
             :to="link.path"
             flat>
-            <v-icon>{{ link.icon }}</v-icon>
+            <v-icon>
+              {{ link.icon }}
+            </v-icon>
             {{ link.label }}
           </v-btn>
         </v-toolbar-items>
