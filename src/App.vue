@@ -1,15 +1,15 @@
 <template>
   <div id="app">
     <v-app id="nexuscon" dark>
-      <NavBar />
       <v-content style="position: relative">
+        <NavBar />
         <v-container fluid class="app-container">
           <transition name="slide" mode="out-in">
             <router-view></router-view>
           </transition>
         </v-container>
+        <Footer />
       </v-content>
-      <Footer />
     </v-app>
   </div>
 </template>
