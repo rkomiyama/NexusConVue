@@ -1,10 +1,9 @@
 <template>
   <div>
     <v-navigation-drawer
-      fixed
-      app
       v-model="drawer"
-      v-if="$mq === 'mobile'">
+      fixed
+      app>
       <v-list>
         <v-list-tile
           v-for="(link, i) in links"
@@ -21,29 +20,10 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <mq-layout mq="tablet">
-      <v-toolbar class="navBar">
-        <v-spacer></v-spacer>
-        <v-toolbar-items>
-          <v-btn
-            v-for="(link, i) in links"
-            :key="i"
-            :to="link.path"
-            flat>
-            <v-icon>
-              {{ link.icon }}
-            </v-icon>
-            {{ link.label }}
-          </v-btn>
-        </v-toolbar-items>
-      </v-toolbar>
-    </mq-layout>
-    <mq-layout mq="mobile">
-      <v-toolbar class="navBar">
-        <v-toolbar-side-icon @click.stop="drawer=!drawer"></v-toolbar-side-icon>
-        <v-toolbar-title>NexusCon</v-toolbar-title>
-      </v-toolbar>
-    </mq-layout>
+    <v-toolbar class="navBar">
+      <v-toolbar-side-icon @click.stop="drawer=!drawer"></v-toolbar-side-icon>
+      <v-toolbar-title>NexusCon</v-toolbar-title>
+    </v-toolbar>
   </div>
 </template>
 
@@ -67,6 +47,11 @@ export default {
           path: '/activities',
           icon: 'color_lens',
           label: 'Activities'
+        },
+        gallery: {
+          path: '/gallery',
+          icon: 'photo_camera',
+          label: 'Gallery'
         },
         guests: {
           path: '/guests',

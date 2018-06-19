@@ -2,8 +2,8 @@
   <div id="app">
     <v-app id="nexuscon" dark>
       <NavBar />
-      <v-content>
-        <v-container class="app-container">
+      <v-content style="position: relative">
+        <v-container fluid class="app-container">
           <transition name="slide" mode="out-in">
             <router-view></router-view>
           </transition>
