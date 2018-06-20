@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify/es5/components/Vuetify'
-import VApp from 'vuetify/es5/components/VApp'
-import VGrid from 'vuetify/es5/components/VGrid'
-import VNavigationDrawer from 'vuetify/es5/components/VNavigationDrawer'
-import VToolbar from 'vuetify/es5/components/VToolbar'
-import VList from 'vuetify/es5/components/VList'
-import VIcon from 'vuetify/es5/components/VIcon'
-import VFooter from 'vuetify/es5/components/VFooter'
+import {
+  Vuetify,
+  VApp,
+  VGrid,
+  VNavigationDrawer,
+  VToolbar,
+  VList,
+  VIcon,
+  VFooter
+} from 'vuetify'
 import VueMq from 'vue-mq'
 
 import App from './App.vue'

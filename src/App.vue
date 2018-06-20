@@ -48,7 +48,7 @@ $footer: 36px;
 
   .app-container {
     padding-top: $header;
-    min-height: calc(100% - #{$header} - #{$footer});
+    min-height: calc(100% - #{$footer});
     font-size: 1em;
     line-height: 1.25;
   }
