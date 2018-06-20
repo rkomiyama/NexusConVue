@@ -31,27 +31,33 @@ export default {
   data() {
     return {
       drawer: null,
-      links: [{
+      links: [
+        {
           path: '/',
           icon: 'home',
           label: 'Home'
-        }, {
+        }, 
+        {
           path: '/about',
           icon: 'info',
           label: 'About Us'
-        }, {
+        }, 
+        {
           path: '/activities',
           icon: 'color_lens',
           label: 'Activities'
-        }, {
+        }, 
+        {
           path: '/gallery',
           icon: 'photo_camera',
           label: 'Gallery'
-        }, {
+        }, 
+        {
           path: '/guests',
           icon: 'group',
           label: 'Guests'
-        }, {
+        }, 
+        {
           path: '/registration',
           icon: 'check_box',
           label: 'Registration'
