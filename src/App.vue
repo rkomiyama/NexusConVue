@@ -45,8 +45,9 @@ $footer: 36px;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  
+
   .app-container {
+    padding-top: $header;
     min-height: calc(100% - #{$header} - #{$footer});
     font-size: 1em;
     line-height: 1.25;

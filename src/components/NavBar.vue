@@ -19,7 +19,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="navBar">
+    <v-toolbar class="navBar" fixed>
       <v-toolbar-side-icon v-if="$mq !== 'desktop'" @click.stop="drawer=!drawer" />
       <v-toolbar-title>NexusCon</v-toolbar-title>
     </v-toolbar>
@@ -70,7 +70,6 @@ export default {
 
 <style scoped>
 .navBar {
-  position: relative;
   z-index: 1;
 }
 </style>
