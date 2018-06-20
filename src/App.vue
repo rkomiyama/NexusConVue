@@ -45,11 +45,12 @@ $footer: 36px;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-}
-.app-container {
-  min-height: calc(100% - #{$header} - #{$footer});
-  font-size: 1em;
-  line-height: 1.25;
+  
+  .app-container {
+    min-height: calc(100% - #{$header} - #{$footer});
+    font-size: 1em;
+    line-height: 1.25;
+  }
 }
 .slide-enter,
 .slide-leave-to {

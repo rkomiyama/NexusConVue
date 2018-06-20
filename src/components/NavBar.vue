@@ -2,7 +2,6 @@
   <div>
     <v-navigation-drawer
       v-model="drawer"
-      fixed
       app>
       <v-list>
         <v-list-tile
@@ -21,7 +20,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="navBar">
-      <v-toolbar-side-icon v-if="$mq !== 'desktop'"  @click.stop="drawer=!drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon v-if="$mq !== 'desktop'" @click.stop="drawer=!drawer" />
       <v-toolbar-title>NexusCon</v-toolbar-title>
     </v-toolbar>
   </div>
@@ -32,38 +31,32 @@ export default {
   data() {
     return {
       drawer: null,
-      links: {
-        home: {
+      links: [{
           path: '/',
           icon: 'home',
           label: 'Home'
-        },
-        about: {
+        }, {
           path: '/about',
           icon: 'info',
           label: 'About Us'
-        },
-        activities: {
+        }, {
           path: '/activities',
           icon: 'color_lens',
           label: 'Activities'
-        },
-        gallery: {
+        }, {
           path: '/gallery',
           icon: 'photo_camera',
           label: 'Gallery'
-        },
-        guests: {
+        }, {
           path: '/guests',
           icon: 'group',
           label: 'Guests'
-        },
-        registration: {
+        }, {
           path: '/registration',
           icon: 'check_box',
           label: 'Registration'
         }
-      }
+      ]
     }
   }
 }
