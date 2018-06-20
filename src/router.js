@@ -1,22 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import HomePage from './components/Home.vue'
-import AboutPage from './components/About.vue'
-import ActivitiesPage from './components/Activities.vue'
-import GalleryPage from './components/Gallery.vue'
-import VendorsPage from './components/Vendors.vue'
-import GuestsPage from './components/Guests.vue'
-import RegistrationPage from './components/Registration.vue'
-
 Vue.use(VueRouter)
+
+const HomePage = () => import('./components/Home.vue')
+const AboutPage = () => import('./components/About.vue')
+const ActivitiesPage = () => import('./components/Activities.vue')
+const GalleryPage = () => import ('./components/Gallery.vue')
+const VendorsPage = () => import('./components/Vendors.vue')
+const GuestsPage = () => import('./components/Guests.vue')
+const RegistrationPage = () => import('./components/Registration.vue')
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
   { path: '/activities', component: ActivitiesPage },
   { path: '/gallery', component: GalleryPage },
-  { path : '/vendors', component: VendorsPage },
+  { path: '/vendors', component: VendorsPage },
   { path: '/guests', component: GuestsPage },
   { path: '/registration', component: RegistrationPage },
 ]
