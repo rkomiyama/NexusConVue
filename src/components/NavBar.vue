@@ -21,7 +21,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="navBar">
-      <v-toolbar-side-icon @click.stop="drawer=!drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon v-if="$mq !== 'desktop'"  @click.stop="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title>NexusCon</v-toolbar-title>
     </v-toolbar>
   </div>

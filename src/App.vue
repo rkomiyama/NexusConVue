@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app id="nexuscon" dark>
-      <v-content style="position: relative">
+      <v-content>
         <NavBar />
         <v-container fluid class="app-container">
           <transition name="slide" mode="out-in">
