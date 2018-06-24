@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <h1>NexusCon</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a volutpat sapien, ut faucibus nisl. Nunc
       ut urna ligula. Mauris feugiat vestibulum odio. Maecenas hendrerit quis enim et fermentum. Praesent 
@@ -12,7 +12,7 @@
       tortor. Curabitur gravida risus ut est posuere, eu ornare nibh euismod. Sed metus risus, mattis ac 
       elementum in, dapibus vel ante.
     </p>
-    <HomePanel />
+    <HomePanels />
     <p>
       Ut ac lacus eget ex accumsan accumsan ut eget mauris. Aenean eleifend porta felis. Fusce sagittis 
       mauris at sollicitudin sagittis. Ut quam neque, posuere tempor cursus at, suscipit nec enim. 
@@ -88,11 +88,11 @@
 </template>
 
 <script>
-import HomePanel from './HomePanel.vue'
+import HomePanels from './HomePanels.vue'
 
 export default {
   components: {
-    HomePanel
+    HomePanels
   }
 }
 </script>
