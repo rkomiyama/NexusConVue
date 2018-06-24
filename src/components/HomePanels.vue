@@ -96,22 +96,22 @@ export default {
     margin-left: calc(50% - 50vw + 150px);
     margin-right: calc(50% - 50vw + 150px);
   }
-}
 
-.homePanel {
-  flex: 1;
-  white-space: nowrap;
-  transition: all 500ms;
+  .homePanel {
+    flex: 1;
+    white-space: nowrap;
+    transition: all 500ms;
 
-  .homePanel-title {
-    position: relative;
-    top: 2rem;
-    padding-left: 1rem;
-  }
+    .homePanel-title {
+      position: relative;
+      top: 2rem;
+      padding-left: 1rem;
+    }
 
-  &:hover {
-    flex: 2;
-    background-color: black !important;
+    &:hover {
+      flex: 2;
+      background-color: black !important;
+    }
   }
 }
 </style>
