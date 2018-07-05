@@ -15,32 +15,38 @@
 </template>
 
 <script>
-const NavBar = () => import('./components/NavBar.vue')
-const Footer = () => import('./components/Footer.vue')
+const NavBar = () => import("./components/NavBar.vue");
+const Footer = () => import("./components/Footer.vue");
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     NavBar,
     Footer
   }
-}
+};
 </script>
 
 <style lang="scss">
 body {
   font-size: 16px;
 }
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size-adjust: 0.5;
 }
 </style>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 $header: 64px;
 $footer: 36px;
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;

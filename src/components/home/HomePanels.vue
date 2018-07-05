@@ -1,5 +1,5 @@
 <template>
-  <v-flex class="homePanels" :class="$mq">
+  <div class="homePanels" :class="$mq">
     <div 
       v-for="(link, i) in links"
       :key="i"
@@ -14,45 +14,45 @@
         {{ link.name }}
       </h3>
     </div>
-  </v-flex>
+  </div>
 </template>
 
 <script>
-import { mixin as clickaway } from 'vue-clickaway'
+import { mixin as clickaway } from "vue-clickaway";
 
 export default {
-  mixins: [ clickaway ],
+  mixins: [clickaway],
   data() {
     return {
       selected: -1,
       links: [
         {
-          name: 'About Us',
-          path: '/about',
-          bgColor: '#5392ff'
+          name: "About Us",
+          path: "/about",
+          bgColor: "#5392ff"
         },
         {
-          name: 'Activities',
-          path: '/activities',
-          bgColor: '#71cddd'
+          name: "Activities",
+          path: "/activities",
+          bgColor: "#71cddd"
         },
         {
-          name: 'Vendors',
-          path: '/vendors',
-          bgColor: '#34bc6e'
+          name: "Vendors",
+          path: "/vendors",
+          bgColor: "#34bc6e"
         },
         {
-          name: 'Guests',
-          path: '/guests',
-          bgColor: '#95d13c'
+          name: "Guests",
+          path: "/guests",
+          bgColor: "#95d13c"
         },
         {
-          name: 'Registration',
-          path: '/registration',
-          bgColor: '#ffb000'
+          name: "Registration",
+          path: "/registration",
+          bgColor: "#ffb000"
         }
       ]
-    }
+    };
   },
   methods: {
     clickAwayFromPanel() {
@@ -60,22 +60,22 @@ export default {
     }
   },
   created() {
-    for(let i = 0; i < this.links.length; i++) {
+    for (let i = 0; i < this.links.length; i++) {
       this.links[i].click = () => {
         if (this.selected === i) {
           this.$router.push(this.links[i].path);
         }
-      }
+      };
       this.links[i].select = () => {
         setTimeout(() => {
-          if (this.selected !== i){
+          if (this.selected !== i) {
             this.selected = i;
           }
         }, 1);
-      }
+      };
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
