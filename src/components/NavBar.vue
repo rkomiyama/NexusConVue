@@ -40,7 +40,7 @@ export default {
         {
           path: "/about",
           icon: "info",
-          label: "About Us"
+          label: "About"
         },
         {
           path: "/activities",

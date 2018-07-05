@@ -27,7 +27,7 @@ export default {
       selected: -1,
       links: [
         {
-          name: "About Us",
+          name: "About",
           path: "/about",
           bgColor: "#5392ff"
         },
