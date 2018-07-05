@@ -4,12 +4,12 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const HomePage = () => import('./components/home/Home.vue')
-const AboutPage = () => import('./components/About.vue')
-const ActivitiesPage = () => import('./components/Activities.vue')
-const GalleryPage = () => import('./components/Gallery.vue')
-const VendorsPage = () => import('./components/Vendors.vue')
-const GuestsPage = () => import('./components/Guests.vue')
-const RegistrationPage = () => import('./components/Registration.vue')
+const AboutPage = () => import('./components/about/About.vue')
+const ActivitiesPage = () => import('./components/activities/Activities.vue')
+const GalleryPage = () => import('./components/gallery/Gallery.vue')
+const VendorsPage = () => import('./components/vendors/Vendors.vue')
+const GuestsPage = () => import('./components/guests/Guests.vue')
+const RegistrationPage = () => import('./components/registration/Registration.vue')
 
 const routes = [
 	{ path: '/', component: HomePage },
